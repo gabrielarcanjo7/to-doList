@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Dosis:wght@300&family=Island+Moments&family=Italianno&family=Lobster&family=Monoton&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Microbe&family=Sarala&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #32335a;
+}
+
+body {
+  background-image: url(/img/6884605.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  font-family: 'Righteous', cursive;
+  color: #F4A179;
+  text-shadow: 2px 2px 2px #32335a;
+  font-size: 2.8rem;
+}
+
+button {
+  background-color: #fdfdfd;
+  color: #32335a;
+  border: 2px solid #32335a;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #32335a;
+}
+
+button:hover>i {
+  color: #fff;
+}
+
+button i {
+  pointer-events: none;
+  /*o click nele fica meio que invisivel
+    color: #102f5e;*/
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 0.50rem 0.7rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #32335a;
+}
+
+.hide {
+  display: none;
+}
+
+/* Todo Header */
+.todo-container {
+  max-width: 450px;
+  margin: 3rem auto 0;
+  background-color: #acadf7;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.todo-container header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Todo Form */
+#todo-form,
+#edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form p,
+#edit-form p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  /* font-family: 'Antonio', sans-serif; */
+
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-control input {
+  margin-right: 0.3rem;
+}
+
+#cancel-edit-btn {
+  margin-top: 1rem;
+  color: #444;
+}
+
+#cancel-edit-btn:hover {
+  color: #fff;
+}
+
+/* Todo Toolbar */
+#toolbar {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
+#toolbar h4 {
+  margin-bottom: 0.5rem;
+}
+
+#search {
+  border-right: 1px solid #ddd;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search form {
+  display: flex;
+}
+
+#search input {
+  width: 100%;
+  margin-right: 0.3rem;
+}
+
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+}
+
+/* Todo List */
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 1.2rem;
+  font-family: 'Righteous', cursive;
+
+}
+
+.todo button {
+  margin-left: 0.4rem;
+}
+
+.done {
+  background: #395169;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+  text-decoration-color: rgb(126, 8, 8);
+  font-weight: 100;
+}
+
+div.fixo-nome {
+  position: fixed;
+  left: 90%;
+  top: 90%;
+
+}
+
+div.fixo-nome h3 {
+  color: #c9c9ee;
+  font-family: 'Lobster', cursive;
+  text-shadow: 2px 2px #32335a;
+  font-weight: 100;
+  border-bottom: solid 2px #c9c9ee;
+  font-size: 1.4rem;
+}
+
+div.fixo-nome span {
+  color: #F4A179
+}
+
+div.fixo-nome p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  background-image: linear-gradient(to right, yellow, #ffa87d, #baffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
